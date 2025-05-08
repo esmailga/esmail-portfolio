@@ -1,65 +1,13 @@
-navbar {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-display: flex;
-justify-content: center;
-z-index: 50;
-padding: 16px;
-}
-
-navbar.nav-container {
-background-color: white;
-width: 100%;
-max-width: 100%;
-padding: 16px 24px;
-transition: all 0.4s ease;
-}
-
-navbar.nav-scrolled {
-width: 70%;
-max-width: 70%;
-border-radius: 300px;
-}
-
-navbar.nav-content {
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-
-navbar.logo-scrolled {
-border-radius: 20px;
-}
-
-navbar.contact-btn {
-background-color: white;
-color: #4f46e5;
-font-weight: 600;
-padding: 8px 24px;
-border: none;
-cursor: pointer;
-transition: all 0.4s ease;
-border-radius: 8px;
-display: flex;
-align-items: center;
-}
-
-navbar.contact-btn-scrolled {
-border-radius: 20px;
-}
-
-navbar.arrow {
-margin-left: 6px;
-opacity: 0;
-transform: translate(-10px);
-transition: all 0.4s ease;
-font-weight: bold;
-}
-
-navbar.arrow-visible {
-opacity: 1;
-transform: translate(0);
-}
+.colorModeContainer {
+    position: relative;
+  }
+  
+  .colorMode {
+    position: absolute;
+    right: 0;
+    width: 25px;
+  }
+  
+  .colorMode:hover {
+    cursor: pointer;
+  }

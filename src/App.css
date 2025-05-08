@@ -2,7 +2,7 @@
     --background-color: #f3f1e9;
     --btn-color:#191918;
     --btn-text-color:#fff;
-    --project-card-bg: #4dc1e0;
+    --card-bg: #4dc1e0;
     --text-color: #222;
     --form-text-color:#555;
     --footer-text-color:#888;
@@ -12,7 +12,7 @@
     --background-color: #222;
     --btn-color:#f3f1e9;
     --btn-text-color:#1c1919;
-    --project-card-bg: #4dc1e0;
+    --card-bg: #4dc1e0;
     --text-color: #222;
     --form-text-color:#555;
     --footer-text-color:#888;
@@ -21,3 +21,8 @@
 body {
     background-color: var(--background-color);
 }
+
+*{
+    box-sizing: border-box;
+}
+
