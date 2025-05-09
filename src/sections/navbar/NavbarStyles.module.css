@@ -1,13 +1,193 @@
-.colorModeContainer {
-    position: relative;
+.navwrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 20px;
+  z-index: 50;
+}
+
+
+.navcontainer {
+  background-color: aqua;
+  width: 100%;
+  max-width: 1700px;
+  padding: 10px 10px;
+  margin: 0 auto;
+  transition: all 0.8s ease;
+}
+
+.navscrolled{
+  background-color: rgb(71, 109, 143);
+  width: 90%;
+  max-width: 1550px;
+  border-radius: 45px;
+  margin: 0 auto;
+}
+
+.navcontent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.colorModeContainer{
+  display: flex;
+}
+
+
+.contactBtn {
+  color: var(--text-color);
+  font-weight: bold;
+  padding: 16px 24px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  border-color: transparent;
+}
+
+.contactBtnScrolled {
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  font-weight: bold;
+  padding: 18px 40px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  border-radius: 36px;
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  font-size: large;
+}
+
+
+.contactBtn:hover{
+  transform: scale(1.06);
+}
+
+.arrow {
+  opacity: 0;
+  margin-left: 8px;
+  transform: translate(-10px);
+  transition: all 0.4s ease;
+  font-weight: bold;
+}
+
+.arrowvis{
+  opacity: 1;
+  transform: translate(0);
+
+}
+
+
+@media (max-width: 1200px) {
+  .navwrapper {
+    padding: 16px;
   }
-  
-  .colorMode {
-    position: absolute;
-    right: 0;
-    width: 25px;
+
+  .navcontainer {
+    max-width: 1050px;
   }
-  
-  .colorMode:hover {
-    cursor: pointer;
+
+  .navscrolled {
+    width: 90%;
+    max-width: 920px;
   }
+
+  .navcontent {
+    padding: 0 10px;
+  }
+
+  .contactBtn {
+    padding: 14px 20px;
+    margin-right: 16px;
+  }
+
+  .contactBtnScrolled {
+    padding: 16px 64px;
+    font-size: medium;
+  }
+}
+
+/* Tablet (768px to 1023px) */
+@media (max-width: 1023px) {
+  .navwrapper {
+    padding: 14px;
+  }
+
+  .navcontainer {
+    max-width: 800px;
+  }
+
+  .navscrolled {
+    width: 85%;
+    max-width: 700px;
+  }
+
+  .navcontent {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 8px;
+  }
+
+  .colorModeContainer {
+    margin-bottom: 0;
+  }
+
+  .contactBtn {
+    padding: 12px 18px;
+    font-size: 0.95rem;
+    margin-right: 12px;
+  }
+
+  .contactBtnScrolled {
+    padding: 14px 48px;
+    font-size: medium;
+  }
+
+  .arrow {
+    margin-left: 6px;
+  }
+}
+
+/* Phone (up to 767px) */
+@media (max-width: 767px) {
+  .navwrapper {
+    padding: 12px;
+  }
+
+  .navcontainer {
+    max-width: 700px;
+    padding: 8px;
+  }
+
+
+  .navscrolled {
+    width: 85%;
+    max-width: 600px;
+  }
+
+
+  .colorModeContainer {
+    width: 100%;
+  }
+
+  .contactBtn {
+    padding: 10px 6px;
+    white-space: nowrap;
+
+  }
+
+  .contactBtnScrolled {
+    width: 50%;
+    justify-content: center;
+    font-size: 1rem;
+    border-radius: 28px;
+    padding: 10px 26px;
+
+  }
+
+}

@@ -25,11 +25,3 @@
     border-radius: 8px;
     object-fit: cover;
   }
-  .tag {
-    display: inline-block;
-    padding: 6px 12px;
-    margin: 4px 6px 0 0;
-    background: #eee;
-    border-radius: 12px;
-    font-size: 13px;
-  }

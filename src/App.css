@@ -1,6 +1,6 @@
 :root {
     --background-color: #f3f1e9;
-    --btn-color:#191918;
+    --btn-color:#132c25;
     --btn-text-color:#fff;
     --card-bg: #4dc1e0;
     --text-color: #222;
@@ -20,9 +20,5 @@
 
 body {
     background-color: var(--background-color);
-}
-
-*{
-    box-sizing: border-box;
 }
 

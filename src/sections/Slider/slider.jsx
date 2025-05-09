@@ -24,6 +24,10 @@ const [currentIndex, setCurrentIndex] = useState(0);
     }, [imagesData.length]);
                     
     return (
+        <>
+        <div style={{ textAlign: 'center', marginBottom: '80px' }}>
+                <h2>Tools that I use</h2>
+        </div>
         <div className={styles['slider-container']}>
             <div className={styles['slider-images-wrapper']} style={{ transform: `translateX(${-currentIndex * (100 / (imagesData.length * 2))}%)` }}>
                 {imagesData.map((image, index) => (
@@ -48,6 +52,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
                 }
             </div>
         </div>
+        </>
     );
 };
                     
